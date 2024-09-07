@@ -12,19 +12,15 @@ const minTemp = document.querySelector("#min-temp");
 const feelsLike = document.querySelector("#feels-like");
 const maxTemp = document.querySelector("#max-temp");
 
-
-  // for loading time getting lat and long then fetching api
-
+// for loading time getting lat and long then fetching api
 
 window.addEventListener("load", () => {
   navigator.geolocation.getCurrentPosition((position) => {
     let lat = position.coords.latitude;
     let long = position.coords.longitude;
-    // console.log(lat);
-    // console.log(long);
+ 
     const APIkey = "2124bcb4ebdd921ada966896d62714b8";
-    // const cityname = document.querySelector(".search-box input").value;
-    // console.log(cityname);
+  
 
     fetch(
       `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid=${APIkey}`
@@ -33,12 +29,15 @@ window.addEventListener("load", () => {
       .then((data) => {
         updateWeather(data);
       });
+      
+    
   });
 });
 
 
-// by searching cityname then fetching api
+  
 
+// by searching cityname then fetching api
 
 search.addEventListener("click", (evt) => {
   evt.preventDefault();
@@ -98,3 +97,5 @@ const updateWeather = (data) => {
   feelsLike.innerText = `${data.main.feels_like}`;
   maxTemp.innerText = `${data.main.temp_max}`;
 };
+
+
