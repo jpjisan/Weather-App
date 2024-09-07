@@ -7,7 +7,7 @@
 
 body {
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -94,11 +94,11 @@ body {
     margin: 40px 0px;
 
     img {
-        width: 45%;
+        width: 25%;
     }
 
     .temparature {
-        margin-top: 20px;
+        margin-top: 10px;
         font-size: 50px;
         font-weight: 550;
         line-height: 1;
@@ -123,6 +123,27 @@ body {
         justify-content: center;
         gap: 5px;
         align-items: center;
+    }
+    .info-temp{
+        display: flex;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: space-around;
+        p{
+            font-size: 12px;
+            font-weight: 500;
+            
+        }
+        .dgre{
+            font-size: 18px;
+            position: relative;
+            span{
+                font-size: 10px;
+                position: absolute;
+                margin: 2px;
+            }
+        }
+
     }
 }
 

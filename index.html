@@ -12,6 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet" />
+        <link rel="icon" type="image/jpg" href="./imges/icon.jpg" />
+
     <title>Weather App</title>
 </head>
 
@@ -30,7 +32,26 @@
                         <div class="weather">
                             <img src="./imges/cloud.png" alt="" />
                             <p class="temparature">16 <span>°C</span></p>
-                            <p class="description">clear cloud</p>
+                            <div class="info-temp">
+                                <div >
+                                    <p class="dgre" id="min-temp">0<span>°C</span></p>
+                                    <p>Min-Temp</p>
+
+                                </div>
+                                <div >
+                                    <p class="dgre" id="feels-like" >0<span>°C</span></p>
+                                    <p>Feels Like</p>
+
+                                </div>
+                                <div >
+                                    <p class="dgre" id="max-temp" >0<span>°C</span></p>
+                                    <p>Max-Temp</p>
+
+                                </div>
+                                
+                            </div>
+                            <p 
+                            class="description">clear cloud</p>
                             <div class="place">
                                 <i class="bx bx-map"></i>
                                 <p class="your-location">kolkata</p>
